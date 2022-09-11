@@ -285,7 +285,6 @@ function generateMonster(dir, monstertype, row, column) {
 function loadBoard() {
     let newBoard;
     let allMonster;
-    console.log(player.level);
     switch (player.level) {
         case 1:
             newBoard = level1;

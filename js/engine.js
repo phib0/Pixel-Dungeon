@@ -55,23 +55,17 @@ function testInteraktion(x, y) {
             case "woodenChest":
                 board[y][x].blocktype = "woodenChestOpen";
                 replaceBlock("woodenChest");
-                player.hp += 1;
-                herzenErstllen(0);
-                displayHerz(true);
+                addHearts(1);
                 break;
             case "goldChest":
                 board[y][x].blocktype = "goldChestOpen";
                 replaceBlock("goldChest");
-                player.hp += 2;
-                herzenErstllen(1);
-                displayHerz(true);
+                addHearts(2);
                 break;
             case "diaChest":
                 board[y][x].blocktype = "diaChestOpen";
                 replaceBlock("diaChest");
-                player.hp += 2;
-                herzenErstllen(2);
-                displayHerz(true);
+                addHearts(3);
                 break;
             case "doorLastLevelLower":
             case "doorLastLevelUpper":
@@ -127,7 +121,7 @@ let canJump = true;
 
 $(document).ready(e => {
     setPosition();
-    herzenErstllen(3);
+    addHearts(3);
     fallcheck();
     $(document).on('keydown', e => {
         switch (e.code) {
@@ -136,7 +130,7 @@ $(document).ready(e => {
             case "KeyW":
                 if (canJump)
                     jump();
-                    playerJumpAnimation();
+                playerJumpAnimation();
                 break;
             case "ArrowLeft":
             case "KeyA":
@@ -197,8 +191,7 @@ function checkMonsterCollision(monsterNum) {
 
     if (monster.column == player.x) {
         if (monster.row == player.y || monster.row == player.y + 1) {
-            player.hp--;
-            herzEntfernen(1);
+            removeHearts(1);
             $("#player").addClass("blink");
             setTimeout(function () { $("#player").removeClass("blink") }, 450);
         }
@@ -209,27 +202,19 @@ function checkMonsterCollision(monsterNum) {
     }
 }
 
-var aktuelleHerzen;
-var counterHerzen;
 
-function herzenErstllen(anzahlHerzen) {
-    anzahl = anzahlHerzen;
-    for (counterHerzen = 0; counterHerzen < anzahl; counterHerzen++) {
-        displayHerz(true);
+let hearts = []
+function addHearts(n) {
+    for (i = 0; i < n; i++) {
+        hearts[hearts.length] = "";
+        $('#herzbox').append('<div class="herz" id="herz' + hearts.length + '"></div>');
     }
-    aktuelleHerzen = anzahlHerzen;
-    return aktuelleHerzen;
+    player.hp = hearts.length;
 }
-
-function herzEntfernen(anzahl) {
-    aktuelleHerzen = aktuelleHerzen - anzahl;
-    displayHerz(false);
-}
-
-function displayHerz(hinzu) {
-    if (hinzu == true) {
-        $('#herzbox').append('<div class="herz" id="herz' + counterHerzen + '"></div>');
-    } else if (hinzu == false) {
-        $(('#herz' + aktuelleHerzen)).remove();
+function removeHearts(n) {
+    for (i = 0; i < n; i++) {
+        hearts.length--;
+        $('#herz' + hearts.length).remove();
     }
+    player.hp = hearts.length;
 }
