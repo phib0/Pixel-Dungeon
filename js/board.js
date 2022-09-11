@@ -325,6 +325,14 @@ function replaceBlock(blockClass) {
             $('.woodenChest').addClass('woodenChestOpen');
             $('.woodenChest').removeClass('woodenChest');
             break;
+        case "goldChest":
+            $('.goldChest').addClass('goldChestOpen');
+            $('.goldChest').removeClass('goldChest');
+            break;
+        case "diaChest":
+            $('.diaChest').addClass('diaChestOpen');
+            $('.diaChest').removeClass('diaChest');
+            break;
         default:
             break;
     }
@@ -538,5 +546,39 @@ function loadRandomBoard() {
             board[e][g] = { blocktype: 'key', solid: false, interactive: true, row: e, column: g, };
             break;
         }
+    }
+    if (rndInt(5, 0) == 1) {
+        let h = rndInt(20, 9)
+        if (h == g) {
+            h++
+        }
+        for (let e = 0; e < board.length; e++) {
+            if (board[e][h].blocktype == "air" && board[e + 1][h].solid == true) {
+                board[e][h] = { blocktype: '', solid: false, interactive: true, row: e, column: h, };
+                switch (rndInt(10, 0)) {
+                    case 0:
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                        board[e][h].blocktype = "woodenChest";
+                        break;
+                    case 5:
+                    case 6:
+                    case 7:
+                        board[e][h].blocktype = "goldChest";
+                        break;
+                    case 8:
+                    case 9:
+                        board[e][h].blocktype = "diaChest";
+                        break;
+                    default:
+                        board[e][h].blocktype = "woodenChest";
+                        break;
+                }
+                break;
+            }
+        }
+
     }
 }
