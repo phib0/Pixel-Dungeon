@@ -1,3 +1,17 @@
+//gamemode selector
+let gamemode
+$(document).ready(function () {
+    $("#campainButton").click(function () {
+        gamemode = "campain"
+        sessionStorage.setItem("gamemode", gamemode);
+    })
+    $("#endlessButton").click(function () {
+        gamemode = "endless"
+        sessionStorage.setItem("gamemode", gamemode);
+    })
+})
+
+
 var board = generateStandardBoard();
 var monsterlvl = [];
 
@@ -205,8 +219,7 @@ let monster3 = [
 
 
 $(document).ready(function () {
-    //loadBoard();
-    loadRandomBoard();
+    gamemodeCheck();
     showBoard();
     console.log(board);
 });
@@ -223,12 +236,12 @@ function showBoard() {
         }
     }
 
-    //  for (let i = 0; i < monsterlvl.length; i++) {
-    //      let monstertype = monsterlvl[i];
-    //      $('#board').append('<div class="monster" id="monster' + i + '" class="' + monstertype + '"> </div>');
-    //      setMonsterPosition(i);
-    //      monsterBewegung.push(setInterval(function () { moveMonster(i) }, 500));
-    //  }
+      for (let i = 0; i < monsterlvl.length; i++) {
+          let monstertype = monsterlvl[i];
+          $('#board').append('<div class="monster" id="monster' + i + '" class="' + monstertype + '"> </div>');
+          setMonsterPosition(i);
+          monsterBewegung.push(setInterval(function () { moveMonster(i) }, 500));
+      }
 }
 
 function generateStandardBoard() {
@@ -580,5 +593,17 @@ function loadRandomBoard() {
             }
         }
 
+    }
+}
+
+function gamemodeCheck(gamemode) {
+    gamemode = sessionStorage.getItem("gamemode");
+    switch (gamemode) {
+        case "campain":
+            loadBoard();
+            break;
+        case "endless":
+            loadRandomBoard();
+            break;
     }
 }

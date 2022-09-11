@@ -18,9 +18,16 @@
 
 }
 
-#startbutton {
+#campainButton {
     grid-row: 3/4;
     grid-column: 2/3;
+    background-color: white;
+}
+
+#endlessButton {
+    grid-row: 3/4;
+    grid-column: 3/4;
+    background-color: aqua;
 }
 
 #creditsbutton {

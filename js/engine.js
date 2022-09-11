@@ -27,7 +27,6 @@ function testInteraktion(x, y) {
                 board[y][x].blocktype = "air";
                 board[y][x].interactive = false;
                 replaceBlock("key");
-                playerInteraction();
                 break;
             case "closedDoorLower":
                 if (player.key == true) {
@@ -35,7 +34,6 @@ function testInteraktion(x, y) {
                     board[y][x].blocktype = "openedDoorLower";
                     board[y - 1][x].blocktype = "openedDoorUpper";
                     replaceBlock("closedDoor");
-                    playerInteraction();
                 }
                 break;
             case "openedDoorLower":
@@ -48,8 +46,7 @@ function testInteraktion(x, y) {
                 monsterlvl = [];
                 monsterBewegung = [];
                 board = generateStandardBoard();
-                //loadBoard();
-                loadRandomBoard();
+                gamemodeCheck();
                 showBoard();
                 player.x = 1;
                 player.y = 0;
@@ -58,24 +55,21 @@ function testInteraktion(x, y) {
             case "woodenChest":
                 board[y][x].blocktype = "woodenChestOpen";
                 replaceBlock("woodenChest");
-                playerInteraction();
-                player.hp++;
+                player.hp += 1;
                 herzenErstllen(0);
                 displayHerz(true);
                 break;
             case "goldChest":
                 board[y][x].blocktype = "goldChestOpen";
                 replaceBlock("goldChest");
-                playerInteraction();
-                player.hp++;
+                player.hp += 2;
                 herzenErstllen(1);
                 displayHerz(true);
                 break;
             case "diaChest":
                 board[y][x].blocktype = "diaChestOpen";
                 replaceBlock("diaChest");
-                playerInteraction();
-                player.hp++;
+                player.hp += 2;
                 herzenErstllen(2);
                 displayHerz(true);
                 break;
@@ -142,7 +136,7 @@ $(document).ready(e => {
             case "KeyW":
                 if (canJump)
                     jump();
-                playerJumpAnimation();
+                    playerJumpAnimation();
                 break;
             case "ArrowLeft":
             case "KeyA":
