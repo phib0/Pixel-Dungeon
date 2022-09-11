@@ -226,10 +226,6 @@
     background-image: url("../img/gegenstaende/Tür/door-up-open.png");
 }
 
-.schatz {
-    background-image: url("../img/gegenstaende/Kisten/gold-kiste.png");
-}
-
 .dirtWithGrass {
     background-image: url("../img/gegenstaende/Blöcke/dirtWithGrass.png");
     background-size: contain;

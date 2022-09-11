@@ -86,7 +86,7 @@ let level2 = [
     { blocktype: 'stone', solid: true, interactive: false, row: 15, column: 35, },
     { blocktype: 'door', solid: false, interactive: true, row: 9, column: 37, },
     { blocktype: 'door', solid: false, interactive: true, row: 8, column: 37, },
-    { blocktype: 'schatz', solid: false, interactive: true, row: 9, column: 35, },
+    { blocktype: 'goldChest', solid: false, interactive: true, row: 9, column: 35, },
     { blocktype: 'closedDoorUpper', solid: true, interactive: true, row: 16, column: 37, },
     { blocktype: 'closedDoorLower', solid: true, interactive: true, row: 17, column: 37, },
 ];
