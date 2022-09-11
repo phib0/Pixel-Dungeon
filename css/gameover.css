@@ -1,0 +1,9 @@
+#gameover {
+    width: 90em;
+    height: 60em;
+    border: 10px solid black;
+    background-image: url("../img/gegenstaende/Hintergründe/game\ over.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+}

@@ -1,0 +1,305 @@
+* {
+    margin: 0em;
+    overflow: hidden;
+}
+
+#board {
+    width: 1900px;
+    height: 1000px;
+    border: 10px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    background-size: contain;
+}
+.background1{
+    background-image: url("../img/gegenstaende/Hintergründe/Hintergrund-djungel.png");
+}
+.background2{
+    background-image: url("../img/gegenstaende/Hintergründe/in-tempel-hintergrund.png");
+}
+.background3{
+    background-image: url("../img/gegenstaende/Hintergründe/wasserfall-hintergrund.png");
+}
+#board>div {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+#player {
+    z-index: 2;
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/*Animation der Figur*/
+.playerStandingLeft {
+    background-image: url('../img/charakter/player_standing_left.png');
+}
+
+.playerStandingRight {
+    background-image: url('../img/charakter/player_standing_right.png');
+}
+
+.playerWalkingLeft {
+    background-image: url('../img/charakter/player_walking_left.png');
+}
+
+.playerWalkingRight {
+    background-image: url('../img/charakter/player_walking_right.png');
+}
+
+.playerInteracting {
+    background-image: url('../img/charakter/player_interaction.png');
+}
+
+.playerJumpingRight {
+    background-image: url('../img/charakter/player_jumping_right.png');
+}
+
+.playerJumpingLeft {
+    background-image: url("../img/charakter/player_jumping_left.png");
+}
+
+/*Aussehen der Spielblöcke*/
+.stone {
+    background-image: url("../img/gegenstaende/Blöcke/stein\ wand.png");
+    background-size: contain;
+}
+
+.torch {
+    background-image: url("../img/gegenstaende/Blöcke/fackel\ gif.gif");
+    background-size: contain;
+}
+
+.sign {
+    background-image: url("../img/gegenstaende/Blöcke/stein\ mit\ schild.png");
+    background-size: contain;
+}
+
+.stoneGround {
+    background-image: url("../img/gegenstaende/Blöcke/stone\ ground.png");
+    background-size: contain;
+}
+
+.dirt {
+    background-image: url("../img/gegenstaende/Blöcke/dirt.png");
+    background-size: contain;
+}
+
+.amethyst {
+    background-image: url("../img/gegenstaende/Blöcke/amethyst.png");
+}
+
+.mossStone {
+    background-image: url("../img/gegenstaende/Blöcke/bewachsene\ steinwand.png");
+}
+
+.diamond {
+    background-image: url("../img/gegenstaende/Blöcke/diamanten.png");
+}
+
+.fox {
+    background-image: url("../img/gegenstaende/Blöcke/dirt\ 2.png");
+}
+
+.grassStone {
+    background-image: url("../img/gegenstaende/Blöcke/grass\ mit\ stein.png");
+}
+
+.holeInWall {
+    background-image: url("../img/gegenstaende/Blöcke/loch\ in\ der\ wand.png");
+}
+
+.StoneWater {
+    background-image: url("../img/gegenstaende/Blöcke/stein\ mit\ wasser.png");
+}
+
+.picture {
+    background-image: url("../img/gegenstaende/Blöcke/stone\ mit\ bild.png");
+}
+
+.stone2 {
+    background-image: url("../img/gegenstaende/Blöcke/stone\ mit\ ritzen.png");
+}
+
+.root1 {
+    background-image: url("../img/gegenstaende/Blöcke/wurzeln\ links.png");
+}
+
+.root2 {
+    background-image: url("../img/gegenstaende/Blöcke/wurzeln\ links\ unten.png");
+}
+
+.root3 {
+    background-image: url("../img/gegenstaende/Blöcke/wurzeln\ mitte.png");
+}
+
+.closedDoorUpper {
+    background-image: url("../img/gegenstaende/Tür/door-up-closed.png");
+    background-size: contain;
+}
+
+.closedDoorLower {
+    background-image: url("../img/gegenstaende/Tür/door-bottom.png");
+    background-size: contain;
+}
+
+.openedDoorUpper {
+    background-image: url("../img/gegenstaende/Tür/door-up-open.png");
+    background-size: contain;
+}
+
+.openedDoorLower {
+    background-image: url("../img/gegenstaende/Tür/door-bottom.png");
+    background-size: contain;
+}
+
+.key {
+    background-image: url("../img/gegenstaende/Schlüssel/key2.png");
+}
+
+.keyBrown {
+    background-image: url("../img/gegenstaende/Schlüssel/key1.png");
+}
+
+.key3 {
+    background-image: url("../img/gegenstaende/Schlüssel/key3.png");
+}
+
+.keyBoss {
+    background-image: url("../img/gegenstaende/Schlüssel/boss_key.png");
+}
+
+.sword1 {
+    background-image: url("../img/gegenstaende/Schwerter/Schwert\ 1.png");
+}
+
+.sword2 {
+    background-image: url("../img/gegenstaende/Schwerter/Schwer\ 2.png");
+}
+
+.sword3 {
+    background-image: url("../img/gegenstaende/Schwerter/Schwert\ 3.png");
+}
+
+.diaChest {
+    background-image: url("../img/gegenstaende/Kisten/dia-kiste.png");
+}
+
+.diaChestOpen {
+    background-image: url("../img/gegenstaende/Kisten/open-dia-kiste.png");
+}
+
+.goldChest {
+    background-image: url("../img/gegenstaende/Kisten/gold-kiste.png");
+}
+
+.goldChestOpen {
+    background-image: url("../img/gegenstaende/Kisten/open-gold-kiste.png");
+}
+
+.woodenChest {
+    background-image: url("../img/gegenstaende/Kisten/holz-kiste.png");
+}
+
+.woodenChestOpen {
+    background-image: url("../img/gegenstaende/Kisten/open-holz-kiste.png");
+
+}
+
+.doorNextLevel {
+    background-color: blue;
+}
+
+.doorLastLevelLower {
+    background-image: url("../img/gegenstaende/Tür/door-bottom.png");
+}
+
+.doorLastLevelUpper {
+    background-image: url("../img/gegenstaende/Tür/door-up-open.png");
+}
+
+.schatz {
+    background-image: url("../img/gegenstaende/Kisten/goldKiste.png");
+}
+
+.dirtWithGrass {
+    background-image: url("../img/gegenstaende/Blöcke/dirtWithGrass.png");
+    background-size: contain;
+}
+
+.monster {
+    background-image: url("../img/monster/ghost.png");
+    z-index: 1;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+
+.blink {
+    animation: blinking 0.5s 0s;
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#herzbox {
+    width: 125px;
+    height: 90px;
+    position: absolute;
+    left: 1750px;
+    top: 20px;
+    z-index: 1;
+    float:left;
+}
+
+.herz {
+    background-image: url('../img/charakter/Herz.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    float:left;
+}
+
+.geist {
+    background-image: url("../img/monster/ghost.png");
+}
+#homebutton{
+    background-image: url("../img/buttons/Kleines_Haus.png");
+    position: absolute;
+    background-size: cover;
+    height:75px;
+    width: 75px;
+    left: 0px;
+    z-index: 1;
+    top: 10px;
+}

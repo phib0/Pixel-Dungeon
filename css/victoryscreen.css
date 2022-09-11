@@ -1,0 +1,17 @@
+#won {
+    width: 90em;
+    height: 60em;
+    border: 10px solid black;
+    background-image: url("../img/gegenstaende/Hintergründe/win-screen.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3fr 15fr 82fr ;
+    grid-template-rows: 88fr 10fr 2fr;
+}
+
+#backbutton {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}

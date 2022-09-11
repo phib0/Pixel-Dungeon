@@ -1,0 +1,34 @@
+#startscreen {
+    width: 90em;
+    height: 60em;
+    border: 10px solid black;
+    background-image: url("../img/gegenstaende/Hintergründe/start-screen.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 23fr 49fr 10fr 18fr;
+    grid-template-rows: 50fr 10fr 25fr 5fr 10fr;
+}
+
+#gameover {
+    background-image: url(Bilder/gameover.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+#startbutton {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+#creditsbutton {
+    grid-row: 5/6;
+    grid-column: 4/5;
+}
+
+#rickroll {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}

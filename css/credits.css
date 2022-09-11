@@ -1,0 +1,17 @@
+#creditscreen {
+    width: 90em;
+    height: 60em;
+    background-image: url("../img/gegenstaende/Hintergründe/credit-screen.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 10px solid black;
+    display:grid;
+    margin: auto;
+    grid-template-columns: 17fr 83fr;
+    grid-template-rows: 88fr 12fr;
+}
+
+#backbutton {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
