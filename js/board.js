@@ -9,6 +9,10 @@ $(document).ready(function () {
         gamemode = "endless"
         sessionStorage.setItem("gamemode", gamemode);
     })
+
+    gamemodeCheck();
+    showBoard();
+    console.log(board);
 })
 
 
@@ -217,12 +221,6 @@ let monster3 = [
 ]
 
 
-
-$(document).ready(function () {
-    gamemodeCheck();
-    showBoard();
-    console.log(board);
-});
 
 var monsterBewegung = []
 
