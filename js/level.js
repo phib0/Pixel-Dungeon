@@ -1,5 +1,3 @@
-
-//Level
 let level1 = [
     { blocktype: 'stone', solid: true, interactive: false, row: 17, column: 0, },
     { blocktype: 'stone', solid: true, interactive: false, row: 17, column: 9, },
@@ -140,60 +138,5 @@ let level3 = [
     { blocktype: 'stone', solid: true, interactive: false, row: 3, column: 18, },
     { blocktype: 'closedDoorLower', solid: true, interactive: true, row: 17, column: 37, },
     { blocktype: 'closedDoorUpper', solid: true, interactive: true, row: 16, column: 37, },
-    { blocktype: 'diaChest', solid: false, interactive: false, row: 6, column: 23, },
-]
-
-
-
-//Monster for Level
-let monster1 = [
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-]
-
-let monster2 = [
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-
-]
-
-let monster3 = [
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
+    // hier muss ne chest hin  { blocktype: '', solid: false, interactive: false, row: 6, column: 23, },
 ]
