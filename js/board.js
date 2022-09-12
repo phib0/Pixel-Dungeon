@@ -21,57 +21,7 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
-let monster1 = [
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-]
 
-let monster2 = [
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-
-]
-
-let monster3 = [
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'unten', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-    { dir: 'oben', monstertype: 'geist', row: getRandomInt(1, 16), column: getRandomInt(5, 33) },
-]
 
 
 
